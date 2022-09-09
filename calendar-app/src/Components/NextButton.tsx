@@ -17,7 +17,7 @@ export function NextButton({monthdaysType, changeMonth}:PreviusButtonProps){
         }
                      
         return (
-            <button className=" text-rose-300 disabled:text-rose-200" key={key} disabled={ monthdaysType === 'Dec'} onClick={()=> changeMonth(value as MonthDatesTypes)}>
+            <button className="text-rose-200 disabled:text-rose-100" key={key} disabled={ monthdaysType === 'Dec'} onClick={()=> changeMonth(value as MonthDatesTypes)}>
               <ArrowRight weight="bold"/>
             </button>
         );

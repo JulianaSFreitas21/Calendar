@@ -17,10 +17,10 @@ export function Calendar() {
   const [monthdatestypes, setMonthdatestypes] = useState<MonthDatesTypes>(month);
  
   return (
-    <div className="bg-white mt-[100px] drop-shadow-md rounded-md flex flex-col p-6 max-w-[680px] mx-auto" >
+    <div className="bg-white drop-shadow-md rounded-md flex flex-col p-6 max-w-[680px] mx-auto" >
       <div className="flex justify-between p">
         <PreviusButton monthdaysType={monthdatestypes} changeMonth={setMonthdatestypes}/>
-        <h1 >{monthDatesTypes[monthdatestypes].title} of {monthDatesTypes[monthdatestypes].year}</h1>
+        <h1 className="text-zinc-500" >{monthDatesTypes[monthdatestypes].title} of {monthDatesTypes[monthdatestypes].year}</h1>
         <NextButton monthdaysType={monthdatestypes} changeMonth={setMonthdatestypes}/>
       </div>
       <Weekdays/>
